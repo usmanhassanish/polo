@@ -1,0 +1,235 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: cambria;
+}
+@media (min-width:550px)
+{
+	#location
+	{
+		margin-left: 40%;
+	}
+
+}
+@media (max-width:750px)
+{
+	.polo-big
+	{
+		display: none;
+	}
+	#game-font
+	{
+		font-size: 20px;
+	}
+	.home-image
+{
+	width: 90%;
+	margin-left: 5%;
+	height: 300px;
+	
+	margin-top: 50px;
+	background-image: url('assets/a4.jpg');
+	background-position: center;
+	background-size: cover;
+	background-color: black;
+}
+.text-wrapper
+{
+	width: 100%;
+	margin-top: 25px;
+}
+.text
+{
+	width: 80%;
+	text-align: center;
+	margin: auto;
+	font-size: 22px;
+	font-style: italic;
+	font-weight: bolder;
+	color: maroon;
+}
+#galeria
+	{
+		height: 300px;
+		width: 100%;
+		border: 6px solid white;
+	}
+}
+@media (min-width:751px)
+{
+	.polo-small
+	{
+		display: none;
+	}
+	#game-font
+	{
+		font-size: 30px;
+	}
+	.home-image
+{
+	width: 90%;
+	margin-left: 5%;
+	height: 400px;
+	
+	margin-top: 50px;
+	background-image: url('assets/d5.jpg');
+	background-position: center;
+	background-size: cover;
+	background-color: black;
+}
+.text-wrapper
+{
+	width: 100%;
+	margin-top: 25px;
+}
+.text
+{
+	width: 80%;
+	text-align: center;
+	margin: auto;
+	font-size: 30px;
+	font-style: italic;
+	font-weight: bolder;
+	color: maroon;
+}
+#galeria
+	{
+		height: 300px;
+		width: 50%;
+		float: left;
+		border: 6px solid white;
+	}
+}
+.top1
+{
+	width: 100%;
+	height: 55px;
+	color: maroon;
+	overflow: auto;
+}
+.top2
+{
+	width: 100%;
+	height: 50px;
+	background-color: maroon;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+.top1-left
+{
+	float: left;
+	width: 70%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+
+}
+.top1-right
+{
+	float: left;
+	width: 30%;
+	height: 100%;	
+}
+#logo
+{
+	margin-left: 10px;
+}
+
+#top-links
+{
+	padding: 10px;
+	font-weight: bolder;
+	text-decoration: none;
+	color: white;
+}
+#top-links:hover
+{
+	background-color: black;
+}
+
+.polo-big
+{
+	width: 90%;
+	margin-left: 5%;
+	margin-top: 5%;
+	overflow: auto;
+	background-color: whitesmoke;
+	
+}
+.founder-left
+{
+	width: 50%;
+	height: 300px;
+	display: flex;
+	float: left;
+	justify-content: center;
+	align-items: center;
+	
+}
+.polo-small
+{
+	
+	margin-top: 10px;
+	width: 100%;
+	text-align: center;
+	background-color: whitesmoke;
+}
+.founder-right
+{
+	width: 50%;
+	height: 300px;
+	display: flex;
+	float: left;
+	justify-content: center;
+	align-items: center;
+	
+}
+#small-founder
+{
+	border-radius: 50px;
+	width: 70%;
+	margin-top: 10px;
+	border: 2px solid white;
+
+}
+#next-game
+{
+	width: 80%;
+	text-align: center;
+	margin-left: 10%;
+	margin-top: 10px;
+	border: 2px dashed maroon;
+    border-radius: 100px / 100px;
+}
+.gallery
+{
+	width: 85%;
+	margin-left: 7.5%;
+}
+.polo-team
+{
+	width: 100%;
+	height: 200px;
+	position: relative;
+	z-index: 1;
+	background-image: url('assets/c1.jpg');
+	background-position: center;
+	background-size: cover;
+}
+.team-overview
+{
+	width: 80%;
+	margin-left: 10%;
+	margin-top: -50px;
+	height: 200px;
+	position: relative;
+	z-index: 3;
+	background-color: white;
+	color: maroon;
+}
+
