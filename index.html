@@ -3,92 +3,184 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="styles.css">
 	<title></title>
+	<style type="text/css">
+		*
+		{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: trebuchet ms, monospace;
+		}
+		@media (min-width:700px)
+		{
+			.nav-small
+			{
+				display: none;
+			}
+			.drop-down
+			{
+				display: none;
+			}
+			#drop
+			{
+				display: none;
+			}
+
+		}
+		@media (max-width:699px)
+		{
+			.nav-big
+			{
+				display: none;
+			}
+			.big-links
+			{
+				display: none;
+			}
+		}
+		.nav-big
+		{
+			width: 100%;
+			height: 23vh;
+			background-color: white;
+			
+			overflow: auto;
+			background-color: whitesmoke;
+			color: maroon;
+		}
+		.nav-big-left
+		{
+			width: 30%;
+			float: left;
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 2vw;
+		}
+		.nav-big-right
+		{
+			width: 70%;
+			float: left;
+			height: 100%;
+			background-color: white;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 2vw;
+
+		}
+		.nav-small
+		{
+			width: 100%;
+			text-align: center;
+			color: maroon;
+			background-color: whitesmoke;
+		}
+		#drop
+		{
+			text-align: center;
+			background-color: maroon;
+			color: white;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			display: none;
+		}
+		.drop-down
+		{
+			overflow: auto;
+		}
+		.big-links-left
+		{
+			width: 65%;
+			height: 7vh;
+			font-size: 5vh;
+			float: left;
+			background-color: maroon;
+			color: white;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.big-links-right
+		{
+			width: 35%;
+			height: 7vh;
+			font-size: 5vh;
+			float: left;
+			background-color: whitesmoke;
+			color: maroon;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+	</style>
 </head>
 <body>
-	<div class="top1">
-		<div class="top1-left">
-			
-			<div class="logo-r"><a href="index.html"><img style="margin-left: 3px;" src="assets/logo.jpg" height="45px"></a></div>
-			<div class="logo-l"><h2>Crown Polo Resort</h2></div>
+	<div class="nav-big">
+		<div class="nav-big-left">
+			<div style="text-align: center;">
+				<h2>MALCOMINES</h2>
+				<h2>GROUP</h2>
+			</div>
 		</div>
-		<div class="top1-right">
-			<div class="t-l">
-				
-			</div>
-			<div class="t-m">
-				<a href="https://www.instagram.com/malcominespolo?igsh=MXJuamxzM3V5M3NsYw=="><img style="float: right;" src="assets/fb.png"></a>
-			</div>
-			<div class="t-r">
-				<a href="https://www.instagram.com/malcominespolo?igsh=MXJuamxzM3V5M3NsYw=="><img style="float: left;" src="assets/insta.png"></a>
+		<div class="nav-big-right">
+			<div style="text-align: center;">
+				<h2>Creating Opportunities</h2>
+				<h2>Since 2014</h2>
 			</div>
 		</div>
 	</div>
-	<div class="top2">
-		<div><a href="club.html" id="top-links">POLO CLUB</a> <a id="top-links" href="gallery.html">GALLERY</a> <a href="events.html" id="top-links">EVENTS</a> <a href="contact.html" id="top-links">CONTACT</a></div>
-	</div>
 
-	<div class="home-image" loading="lazy">
-		
-	</div>
-	<div id="next-game">
-		<div id="game-font">Upcoming Game</div>
-		<hr style="width:80%;margin-left:10%;margin-top: 3px;border: 1px solid maroon;">
-		<div id="game-font">Malcomines</div>
-		<div id="game-font">vs</div>
-		<div id="game-font">Rubicon</div>
-		<div id="game-font" style="padding-bottom: 10px;">June 30, 2025. 4:30pm</div>
-	</div>
-	<div class="polo-big">
-		<div class="founder-left">
-			<h2 style="width:70%;margin-left: 15%;">“Because of the pleasure in the game of polo, many people are finding it very interesting and are opening polo teams.” <br><br>- Murtala Laushi - Founder, Malcomines Polo Resort</h2>
+	<div class="nav-small">
+		<div>
+			<div style="padding-top: 5vh;padding-bottom: 5vh;">
+				<h2>MALCOMINES</h2>
+				<h2>GROUP</h2>
+				<hr style="border: 2px solid maroon;width: 60%;margin-left: 20%;border-radius: 10px;margin-top: 10px;margin-bottom: 10px;">
+				<h2>Creating Opportunities</h2>
+				<h2>Since 2014</h2>
+			</div>
 		</div>
-		<div class="founder-right">
-			<img style="border-radius: 10px;" src="assets/c5.jpg" width="80%" height="80%">
+	</div>
+
+	<div class="drop-down">
+		<div style="float: left; display: flex;align-items: center; width: 50%;background-color: maroon;color: white; height: 50px;">
+			<h2 style="margin-left:5%;">MENU</h2>
 		</div>
-
+		<div style="float: left; display: flex;align-items: center; width: 50%; background-color: maroon;color: white;height: 50px;">
+			<img onclick="drop()" style="margin-left: 75%;" src="menu.png" height="80%">
+		</div>
 	</div>
-
-	<div class="polo-small">
-		
-			
-			<img id="small-founder" src="assets/c5.jpg" >
-
-			<h2 style="width:70%;margin-left: 15%; text-align: center;">“Because of the pleasure in the game of polo, many people are finding it very interesting and are opening polo teams.” <br><br>- Murtala Laushi - Founder, Malcomines Polo Resort</h2>
+	<div id="drop">
+		<div>
+		<h2><img onclick="lock()" src="clo.png"></h2>
+		<h2><a>About Us</a></h2>
+		<h2><a>Our Businesses</a></h2>
+		<h2><a>Contact</a></h2>
+		</div>
 	</div>
-
-	<div class="text-wrapper">
-		<div class="text">Enjoy the beautiful atmosphere the Plateau offers with the yearly Jos Polo Tournament.</div>
-	</div>
-	<br>
-	<div id="link-gallery-s">
-		<div class="text-small">
+	<div style="overflow: auto;" class="big-links">
+		<div class="big-links-left">
 			<div>
-			<h2>Crown Polo Resort Gallery</h2>
-			<hr style="width:50%; margin-left: 25%;margin-top: 5%;margin-bottom: 5%;border: 2px solid black;">
-			<h3 style="width:80%;margin-left:10%">EXPLORE THE BEAUTIFUL GALLERY OF CROWN POLO RESORT</h3>
-			<a style="color: black;text-decoration: none;" href="gallery.html"><div style="width:50%; margin-left: 25%;border: 2PX solid black;margin-top: 5px;"><h2>VIEW GALLERY</h2></div>
-			</div></a>
+			<a>About</a> | <a>Our Businesses</a> | <a> Contact</a>
+			</div>
+		</div>
+		<div class="big-links-right">
+			
 		</div>
 	</div>
-
-	<div id="link-gallery-b">
-		<div class="text-big">
-			<div>
-			<h1>Crown Polo Resort Gallery</h1>
-			<hr style="width:50%; margin-left: 25%;margin-top: 5%;margin-bottom: 5%;border: 2px solid black;">
-			<h2 style="width:80%;margin-left:10%">EXPLORE THE BEAUTIFUL GALLERY OF CROWN POLO RESORT</h2>
-			<a href="gallery.html" style="color: black;text-decoration: none;"><div style="width:50%; margin-left: 25%;border: 2PX solid black;margin-top: 5px;"><h1>VIEW GALLERY</h1></div>
-			</div></a>
-		</div>
-	</div>
-	<div class="footer">
-		<h2 style="padding: 3px;">Address: Along Jos-Bauchi road</h2>
-		<h2 style="padding: 3px;">E-mail: crownpolo@gmail.com</h2>
-		<h2 style="padding: 3px;">Phone: +2348000000000</h2>
-		<h4 style="padding: 3px;">© 2025 Crown Polo Resort. All rights reserved</h4>
-		
-	</div>
+	
+	<script type="text/javascript">
+		function drop()
+		{
+			document.getElementById('drop').style.display = 'block';
+		}
+		function lock()
+		{
+			document.getElementById('drop').style.display = 'none';
+		}
+	</script>
 </body>
 </html>
